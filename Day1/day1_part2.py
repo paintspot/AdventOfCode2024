@@ -3,7 +3,7 @@
 column1 = []
 column2 = []
 
-with open("..\input.txt", "r") as file:
+with open(".\input.txt", "r") as file:
     for line in file:
         values = line.split()
         column1.append(int(values[0])) 
