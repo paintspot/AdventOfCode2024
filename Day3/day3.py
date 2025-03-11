@@ -6,7 +6,7 @@ with open(".\\input.txt", "r") as fileobj:
     multipliers = re.findall(r"mul\(\d+\,\d+\)", content)
 
 for multiplier in multipliers:
-    numbers = re.findall("\d+", multiplier)
+    numbers = re.findall(r"\d+", multiplier)
     result += int(numbers[0]) * int(numbers[1])
 
 print(result)
